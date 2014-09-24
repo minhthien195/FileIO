@@ -70,7 +70,7 @@ public class ListStudent {
     
     public void setStudent(String name, int age, int mark) {
         try {
-            FileOutputStream os = new FileOutputStream("ListStudent");
+            FileOutputStream os = new FileOutputStream("ListStudent", flag);
             os.write(("Name : " + name + "\n").getBytes());
             os.write(("Age : " + age + "\n").getBytes());
             os.write(("Mark : " + mark + "\n").getBytes());
